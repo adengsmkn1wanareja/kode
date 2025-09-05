@@ -1,0 +1,1 @@
+{\n  "name": "tauri-basic",\n  "version": "0.1.0",\n  "scripts": {\n    "tauri": "tauri"\n  },\n  "devDependencies": {}\n}
