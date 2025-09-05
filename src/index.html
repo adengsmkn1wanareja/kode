@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tauri Basic App</title>
+</head>
+<body>
+  <h1>Hello from Tauri!</h1>
+  <button onclick="greet()">Greet</button>
+  <script>
+    async function greet() {
+      const name = 'Tauri User'
+      // Call the Rust command via Tauri bridge
+      const greeting = await window.__TAURI__.invoke('greet', { name })
+      alert(greeting)
+    }
+  </script>
+</body>
+</html>
